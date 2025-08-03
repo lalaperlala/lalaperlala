@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Layout - Columns</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Column -->
+    <nav>
+        <div class="logo">
+            <a href="#" data-section="about">
+            <img src="LOGO.png" alt="Logo">
+
+            </a>
+        </div>
+        <ul>
+            <li><a href="#" data-section="about">ABOUT ME</a></li>
+            <li><a href="#" data-section="experience">EXPERIENCE</a></li>
+            <li><a href="#" data-section="portfolio">PORTFOLIO</a></li>
+            <li><a href="#" data-section="activities">ACTIVITIES</a></li>
+            <li><a href="#" data-section="awards">AWARDS</a></li>
+            <li><a href="#" data-section="certifications">CERTIFICATIONS</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Main Content Column -->
+    <div class="main" id="main-content">
+        <section id="about" class="content-section active">
+            <h1 class="section-title">ABOUT ME !</h1>
+            <h2 class="role"></h2>
+
+            <div class="about-subsection">
+                <h3>What I Do:</h3>
+                <ul class="what-i-do">
+                    <li class="skill-box"><img src="Data Analysis.png" alt="Data Analysis Icon"> Data Analysis</li>
+                    <li class="skill-box"><img src="Web Dev.png" alt="Web Dev Icon"> Development</li>
+                </ul>
+            </div>
+
+
+            <div class="about-subsection">
+                <h3>Tech Stack:</h3>
+                <div class="tech-stack-box">
+                    <div class="tech-stack">
+                        <!-- Data Analysis / Data Science -->
+                        <span class="badge">Python</span>
+                        <span class="badge">Pandas</span>
+                        <span class="badge">NumPy</span>
+                        <span class="badge">Matplotlib</span>
+                        <span class="badge">Seaborn</span>
+                        <span class="badge">Scikit-Learn</span>
+                        <span class="badge">Jupyter Notebook</span>
+                        <span class="badge">Dataiku</span>
+                        <span class="badge">Power BI</span>
+                        <span class="badge">Spotfire</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">MySQL</span>
+
+                        <!-- Web Development -->
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Flask</span>
+                        <span class="badge">REST API</span>
+
+                        <!-- Game Development -->
+                        <span class="badge">Unity (C#)</span>
+
+                        <!-- General Tools -->
+                        <span class="badge">AWS</span>
+                        <span class="badge">Git</span>
+                        <span class="badge">GitHub</span>
+                        <span class="badge">VS Code</span>
+                        <span class="badge">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-button-container">
+                <button class="portfolio-button" data-section="portfolio">
+                    Check my Portfolio !
+                </button>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section">
+            <h2 class="section-title">EXPERIENCE</h2>
+
+            <div class="experience-card">
+                <div class="date-button-row">
+                    <h3 class="job-title">Data Science Intern</h3>
+                    <button class="see-more-btn" onclick="toggleMore(this)">See more</button>
+                </div>
+    
+                <p class="company">STMicroelectronics</p>
+                <p class="date-range">04.2025 - 07.2025</p>
+              
+                <div class="more-content" style="display: none;">
+                    <p>• Performed exploratory data analysis (EDA)</p>
+                    <p>• Built and evaluated machine learning models for predictive insights</p>
+                    <p>• Created interactive dashboards to communicate findings to stakeholders</p>
+                    <p>• Tools used: Python, Dataiku, Jupyter Notebook, Spotfire, Power BI</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <h2 class="section-title">PROJECTS</h2>
+
+            <div class="port-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="AgriKA1.jpg" alt="AgriKA">
+                    <div class="project-info">
+                        <h3>AgriKA</h3>
+                        <a href="#" class="project-btn" data-section="agrika">See Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                <img src="Loro.jpg" alt="LORO">
+                <div class="project-info">
+                    <h3>LORO</h3>
+                    <a href="#" class="project-btn" data-section="loro">See Project</a>
+                </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                <img src="Bibe Kalma.jpg" alt="Bibe Kalma">
+                <div class="project-info">
+                    <h3>Bibe Kalma</h3>
+                    <a href="#" class="project-btn" data-section="bibekalma">See Project</a>
+                </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                <img src="HASTE.jpg" alt="Haste-urant">
+                <div class="project-info">
+                    <h3>Haste-urant</h3>
+                    <a href="#" class="project-btn" data-section="haste">See Project</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- activities -->
+        <section id="activities" class="content-section">
+            <h2 class="section-title">ACTIVITIES</h2>
+
+            <div class="port-grid">
+                <!-- Activity 1 -->
+                <div class="project-card">
+                    <img src="Activity1.jpg" alt="Activity 1">
+                    <div class="project-info">
+                        <h3>Modern Technologies</h3>
+                        <a href="#" class="project-btn" data-section="activity1">More</a>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="project-card">
+                    <img src="Activity2.jfif" alt="Activity 2">
+                    <div class="project-info">
+                        <h3>Microsoft Season of AI: <br>Season of Agents</h3>
+                        <a href="#" class="project-btn" data-section="activity2">More</a>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="project-card">
+                    <img src="Activity3.jfif" alt="Activity 3">
+                    <div class="project-info">
+                        <h3>GitHub Copilot Global Bootcamp</h3>
+                        <a href="#" class="project-btn" data-section="activity3">More</a>
+                    </div>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="project-card">
+                    <img src="Activity4.jpg" alt="Activity 4">
+                    <div class="project-info">
+                        <h3>Artisan on port 8000: <br>Laravel Unlocked</h3>
+                        <a href="#" class="project-btn" data-section="activity4">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- awards -->
+        <section id="awards" class="content-section">
+            <h2 class="section-title">AWARDS</h2>
+
+            <div class="award-card">
+                <h3 class="award-title">2nd Place - Microsoft ASEAN AI for Accessibility Hackathon 2024</h3>
+                <p class="award-org">Microsoft Philippines</p>
+            </div>
+        </section>
+
+        <!-- certifications -->
+        <section id="certifications" class="content-section">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3 class="cert-title">CompTIA IT Fundamentals</h3>
+                    <p class="cert-org">CompTIA</p>
+                </div>
+                <a href="https://www.credly.com/badges/f8df2b40-2905-4426-9488-dcac9ef10d4a" class="cert-btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3 class="cert-title">AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
+                    <p class="cert-org">Amazon Web Services</p>
+                </div>
+                <a href="https://www.credly.com/badges/c4a91b7b-3069-477e-b316-8b5604d1868a/public_url" class="cert-btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3 class="cert-title">Baseline: Data, ML, AI</h3>
+                    <p class="cert-org">Google Cloud Skill Boost</p>
+                </div>
+                <a href="https://www.cloudskillsboost.google/public_profiles/adb83a14-e67c-45e8-9ebe-50ab1a23e9cd" class="cert-btn" target="_blank">View Certificate</a>
+            </div>
+        </section>
+
+        <!-- PER PROJECT SECTION -->
+        <section id="agrika" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">AgriKA</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="AgriKA1.jpg" alt="AgriKA Screenshot" id="project-image">
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                AgriKA is a web-based platform that integrates precision agriculture data to help farmers
+                monitor crop health and predict yields. It uses satellite imagery, NDVI analysis, and weather
+                data to generate insights for better farming decisions.
+                </p>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="project-tech">
+    
+                <div class="tech-stack">
+                <span class="badge">Python</span>
+                <span class="badge">Flask</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">SQL</span>
+                <span class="badge">HTML/CSS</span>
+                <span class="badge">AWS</span>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('portfolio')">← Back to Portfolio</button>
+        </section>
+
+        <section id="loro" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">Bibe Kalma</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="LORO.jpg" alt="AgriKA Screenshot" id="project-image">
+                <button class="next-image-btn" onclick="nextImage()">➜</button>
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                "LORO" is a mobile app concept designed to support children with speech disabilities 
+                by enhancing their speech learning journey through engaging and accessible features. 
+                The idea was pitched at the Microsoft ASEAN AI for Accessibility Hackathon 2024 on 
+                June 13, 2024 and proudly secured 2nd place in the competition.
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('portfolio')">← Back to Portfolio</button>
+        </section>
+
+        <section id="bibekalma" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">Bibe Kalma</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="Bibe Kalma.jpg" alt="Screenshot" id="project-image">
+                <button class="next-image-btn" onclick="nextImage()">➜</button>
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                "Bibe Kalma" is a side-scrolling game where players guide a duck through obstacles 
+                while collecting food to grow a baby duckling. As players progress, they can hatch 
+                eggs and unlock new duck characters. The game blends fun mechanics with a rewarding 
+                character progression system.
+                </p>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="project-tech">
+      
+                <div class="tech-stack">
+                <span class="badge">C#</span>
+                <span class="badge">Unity</span>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('portfolio')">← Back to Portfolio</button>
+        </section>
+        <section id="haste" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">Haste-urant</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="HASTE.jpg" alt="AgriKA Screenshot" id="project-image">
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                "Haste-urant" is a web application concept aimed at modernizing the ordering system 
+                in unlimited-serving restaurants, such as chicken wings and samgyupsal establishments. 
+                It streamlines the traditional paper-based or verbal ordering process by providing a 
+                faster, more efficient digital platform that enhances both customer experience and staff workflow.
+                </p>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="project-tech">
+
+                <div class="tech-stack">
+                <span class="badge">Python</span>
+                <span class="badge">Flask</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">SQL</span>
+                <span class="badge">HTML/CSS</span>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('portfolio')">← Back to Portfolio</button>
+        </section>
+
+        <!-- PER ACTIVITY SECTION -->
+        <section id="activity1" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">Modern Technologies</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="Activity1.JPG" alt="Screenshot" id="project-image">
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                Role: Head Organizer
+                </p> <br>
+                <p>
+                As the head organizer of the “Modern Technologies” seminar held on June 14, 2025, I had the privilege of overseeing 
+                an impactful event that brought together students, professionals, 
+                and tech enthusiasts to explore the evolving landscape of software development and IT operations. 
+                With expert speakers such as CJ De Claro, Darla David, and Joshua Bumanlag, the seminar featured 
+                in-depth discussions artificial intelligence, cloud computing service models, and agent integration 
+                in Flutter-based mobile apps. 
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('activities')">← Back to Activities</button>
+        </section>
+        <section id="activity2" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">Microsoft Season of AI – Season of Agents (Season 4)</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="Activity2.jfif" alt="Screenshot" id="project-image">
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                The seminar highlighted Azure AI Foundry’s tools for simplifying AI deployment and 
+                showcased the Agent SDK for building practical agents. It emphasized ethical, 
+                transparent human-AI interaction and provided valuable insights through onsite networking 
+                and discussions. Overall, it expanded my understanding of AI development and sparked ideas 
+                for real-world applications.
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('activities')">← Back to Activities</button>
+        </section>
+        <section id="activity3" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">GitHub Copilot Global Bootcamp</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="Activity3.jfif" alt="Screenshot" id="project-image">
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                The GitHub Copilot Global Bootcamp on June 20, 2025, demonstrated how AI can streamline software 
+                development through real-time code generation. Live demos showed Copilot’s ability to interpret 
+                context and reduce repetitive tasks. The event emphasized responsible AI use, highlighting the 
+                need for human validation of generated code. Networking and Q&A sessions provided deeper technical 
+                insights into integrating AI-assisted tools into modern development workflows.
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('activities')">← Back to Activities</button>
+        </section>
+                <section id="activity4" class="content-section">
+            <!-- Project Title -->
+            <h2 class="project-title">Artisan on port 8000: Laravel Unlocked</h2>
+
+            <!-- Image Viewer -->
+            <div class="project-images">
+                <img src="Activity4.JPG" alt="Screenshot" id="project-image">
+            </div>
+
+            <!-- Description -->
+            <div class="project-description">
+                <h3>Description:</h3>
+                <p>
+                The Laravel Unlocked seminar provided a hands-on introduction to modern PHP development and showcased 
+                how Laravel simplifies workflows with tools like Artisan and Blade templates. It emphasized Laravel’s 
+                scalability and modular structure, highlighting features such as authentication and event handling for 
+                real-world applications. The session also reinforced the importance of clean code practices through MVC 
+                architecture and SOLID principles. Overall, it was an engaging and inspiring experience that strengthened 
+                my interest in back-end development and Laravel.
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <button class="back-btn" onclick="showSection('activities')">← Back to Activities</button>
+        </section>
+
+    </div>
+
+    <div class="contact">
+        <div class="profile">
+            <img src="MyPicture.jpg" alt="My Photo">
+            <p class="intro"><span class="my-name">Pearl Angelou Lim</span></p>
+            <p class="bio">.☘︎ ݁˖ curating pixels and predictions</p>
+            
+            <div class="social-buttons">
+                <a href="Resume_Lim_PearlAngelou.pdf" class="cv-button" download>Resume</a>
+                <a href="https://www.linkedin.com/in/limpearlangelou/" target="_blank" class="cv-button">LinkedIn</a>
+            </div>
+            <p class="email"><a>limpearlangelou@gmail.com</a></p>
+        </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
