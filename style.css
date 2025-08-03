@@ -168,6 +168,32 @@ nav ul li a:hover {
   padding: 0 10px;
 }
 
+.location{
+  margin-top: 40px;
+}
+
+.status{
+  margin-bottom: 30px;
+}
+
+.status,
+.location {
+  display: flex;
+  align-items: center;      
+  justify-content: center; 
+  gap: 6px;                
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #333;        
+}
+
+
+.status .icon,
+.location .icon {
+  font-size: 1rem;          
+  color: #333;              
+}
+
 
 .intro {
   font-size: 1rem;
