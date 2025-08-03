@@ -129,7 +129,7 @@ nav ul li a:hover {
 
 
 .contact {
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   width: 23%;            
   padding: 20px;
   padding-top: 50px;
@@ -139,8 +139,16 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   overflow-y: auto;
-  border-left: 2px solid #ddd;
+
+  /* Box style */
+  border: 1px solid #ccc;           
+  border-radius: 8px;               
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  /* Space around the box to make border visible */
+  margin: 10px; 
 }
+
 
 
 
@@ -296,9 +304,14 @@ nav ul li a:hover {
 .about-subsection h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  color: #333;
+  color: #000; 
   margin-bottom: 8px;
+  background-color: #ffeb99; 
+  display: inline-block; 
+  padding: 3px 8px; 
+  border-radius: 2px; 
 }
+
 
 .about-subsection li img {
   width: 18px;   
@@ -432,7 +445,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   margin: 20px auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .portfolio-button {
@@ -525,8 +538,13 @@ nav ul li a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #000; /* Black text like the image */
+  background-color: #ffeb99; /* Light yellow background */
+  display: inline-block; /* Shrinks background to text width */
+  padding: 5px 10px; /* Adds spacing inside the box */
+  border-radius: 2px; /* Slightly rounded corners */
 }
+
 
 .experience-card {
   background: #fff;
